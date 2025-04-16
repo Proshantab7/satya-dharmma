@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 text-white">
+    <nav className="bg-yellow-900 text-white sticky top-0  w-full z-10 shadow-md">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="text-xl font-bold">
@@ -28,7 +28,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul
-          className={`flex flex-col md:flex-row md:space-x-6 absolute md:static bg-gray-800 w-full md:w-auto left-0 top-16 md:top-0 transition-transform transform ${
+          className={`flex flex-col md:flex-row md:space-x-6 absolute md:static  w-full md:w-auto left-0 top-16 md:top-0 transition-transform transform ${
             isOpen ? "translate-y-0" : "hidden md:flex md:translate-y-0"
           }`}
         >
@@ -39,6 +39,34 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Home
+            </Link>
+          </li>
+          <li className="border-b md:border-none">
+            <Link
+              href="/books"
+              className="block py-2 px-4 hover:text-yellow-400"
+              onClick={() => setIsOpen(false)}
+            >
+              Books
+            </Link>
+          </li>
+          <li className="border-b md:border-none">
+            <Link
+              href="/photo"
+              className="block py-2 px-4 hover:text-yellow-400"
+              onClick={() => setIsOpen(false)}
+            >
+              Photo
+            </Link>
+          </li>
+
+          <li className="border-b md:border-none">
+            <Link
+              href="/biography"
+              className="block py-2 px-4 hover:text-yellow-400"
+              onClick={() => setIsOpen(false)}
+            >
+              Biography
             </Link>
           </li>
           <li className="border-b md:border-none">
