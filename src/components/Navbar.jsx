@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-yellow-900 text-white sticky top-0  w-full z-10 shadow-md">
+    <nav className="bg-gray-800 text-white">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="text-xl font-bold">
@@ -28,7 +28,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul
-          className={`flex flex-col md:flex-row md:space-x-6 absolute md:static  w-full md:w-auto left-0 top-16 md:top-0 transition-transform transform ${
+          className={`flex flex-col md:flex-row md:space-x-6 absolute md:static bg-gray-800 w-full md:w-auto left-0 top-16 md:top-0 transition-transform transform ${
             isOpen ? "translate-y-0" : "hidden md:flex md:translate-y-0"
           }`}
         >
