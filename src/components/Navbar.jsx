@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -32,7 +34,7 @@ const Navbar = () => {
             isOpen ? "translate-y-0" : "hidden md:flex md:translate-y-0"
           }`}
         >
-          <li className="border-b md:border-none">
+          <li className={`border-b md:border-none ${pathname === "/" ? "text-green-400" : ""}`}>
             <Link
               href="/"
               className="block py-2 px-4 hover:text-yellow-400"
@@ -41,7 +43,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="border-b md:border-none">
+          <li className={`border-b md:border-none ${pathname === "/books" ? "text-green-400" : ""}`}>
             <Link
               href="/books"
               className="block py-2 px-4 hover:text-yellow-400"
@@ -50,7 +52,7 @@ const Navbar = () => {
               Books
             </Link>
           </li>
-          <li className="border-b md:border-none">
+          <li className={`border-b md:border-none ${pathname === "/photo" ? "text-green-400" : ""}`}>
             <Link
               href="/photo"
               className="block py-2 px-4 hover:text-yellow-400"
@@ -60,7 +62,7 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li className="border-b md:border-none">
+          <li className={`border-b md:border-none ${pathname === "/biography" ? "text-green-400" : ""}`}>
             <Link
               href="/biography"
               className="block py-2 px-4 hover:text-yellow-400"
@@ -69,7 +71,7 @@ const Navbar = () => {
               Biography
             </Link>
           </li>
-          <li className="border-b md:border-none">
+          <li className={`border-b md:border-none ${pathname === "/about" ? "text-green-400" : ""}`}>
             <Link
               href="/about"
               className="block py-2 px-4 hover:text-yellow-400"
@@ -78,7 +80,7 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li className="border-b md:border-none">
+          <li className={`border-b md:border-none ${pathname === "/services" ? "text-green-400" : ""}`}>
             <Link
               href="/services"
               className="block py-2 px-4 hover:text-yellow-400"
@@ -87,7 +89,7 @@ const Navbar = () => {
               Services
             </Link>
           </li>
-          <li className="border-b md:border-none">
+          <li className={`border-b md:border-none ${pathname === "/contact" ? "text-green-400" : ""}`}>
             <Link
               href="/contact"
               className="block py-2 px-4 hover:text-yellow-400"

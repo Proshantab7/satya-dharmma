@@ -10,22 +10,22 @@ function Footer() {
         </p>
         <ul className="flex justify-center space-x-6">
           <li>
-            <Link href="/" className="hover:text-yellow-400">
+            <Link href="https://www.facebook.com/profile.php?id=100083592430030" target='_blank' className="hover:text-yellow-400">
               Facebook
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-yellow-400">
+            <Link href="#" className="hover:text-yellow-400">
                 Twitter
             </Link>
           </li>
           <li>
-            <Link href="/services" className="hover:text-yellow-400">
+            <Link href="#" className="hover:text-yellow-400">
                 Instagram
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-yellow-400">
+            <Link href="#" className="hover:text-yellow-400">
                 LinkedIn
             </Link>
           </li>

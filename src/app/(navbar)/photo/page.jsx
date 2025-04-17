@@ -1,11 +1,15 @@
 import React from 'react';
-
+import Image from 'next/image';
+import gurudev from '@/assets/images/gurunath_sengupta.jpg';
+import nibaran from '@/assets/images/nibaran.jpg';
+import gurudevi from '@/assets/images/adormoni_devi.jpg';
+import jatin from '@/assets/images/Jatin.jpg';
 const Photo = () => {
   const photos = [
-    { id: 1, src: '/images/photo1.jpg', alt: 'Photo 1' },
-    { id: 2, src: '/images/photo2.jpg', alt: 'Photo 2' },
-    { id: 3, src: '/images/photo3.jpg', alt: 'Photo 3' },
-    { id: 4, src: '/images/photo4.jpg', alt: 'Photo 4' },
+    { id: 1, src: gurudev, alt: 'Mahatma Gurunath Sengupta' },
+    { id: 2, src: nibaran, alt: 'Mahatma Nibaran' },
+    { id: 3, src: gurudevi, alt: 'Mahatma Adormoni Devi' },
+    { id: 4, src: jatin, alt: 'Mahatma Jatin and his wife' },
     { id: 5, src: '/images/photo5.jpg', alt: 'Photo 5' },
     { id: 6, src: '/images/photo6.jpg', alt: 'Photo 6' },
   ];
@@ -23,10 +27,12 @@ const Photo = () => {
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {photos.map((photo) => (
             <div key={photo.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-              <img
+              <Image
+                width={300}
+                height= {250}
                 src={photo.src}
                 alt={photo.alt}
-                className="w-full h-64 object-cover"
+                className="w-full h-[450px] object-cover"
               />
             </div>
           ))}
