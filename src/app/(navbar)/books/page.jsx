@@ -64,7 +64,7 @@ const Books = () => {
       </main>
       <Link href="/orders.pdf">DownLoad Pdf</Link>
 
-      {/* <PdfViewer/> */}
+      <PdfViewer/>
     </div>
   );
 };
