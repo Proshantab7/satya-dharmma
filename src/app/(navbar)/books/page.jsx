@@ -1,7 +1,5 @@
-import PdfViewer from "@/components/PdfViewer";
-import Link from "next/link";
+
 import React from "react";
-// import order from '@/assets/pdfs/orders.pdf'
 
 const Books = () => {
   const books = [
@@ -10,7 +8,7 @@ const Books = () => {
       title: "Orders",
       description: "A guide to finding inner peace and wisdom.",
       image: "/images/book1.jpg",
-      // url: "/orders.pdf",
+
     },
     {
       id: 2,
@@ -18,14 +16,14 @@ const Books = () => {
       description:
         "Practical tips for incorporating mindfulness into your routine.",
       image: "/images/book2.jpg",
-      // url: "/meditation.pdf",
+     
     },
     {
       id: 3,
       title: "Dampotir Dharmma Alap",
       description: "Learn how to cultivate compassion and kindness.",
       image: "/images/book3.jpg",
-      // url: "/dampotir-dharmma-alap.pdf",
+     
     },
   ];
 
@@ -53,9 +51,9 @@ const Books = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-4">
-                <Link href='#'>
+            
                   <h3 className="text-xl font-bold mb-2">{book.title}</h3>
-                </Link>
+            
                 <p className="text-gray-600 mb-4">{book.description}</p>
               </div>
             </div>
