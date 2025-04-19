@@ -4,6 +4,8 @@ import gurudev from '@/assets/images/gurunath_sengupta.jpg';
 import nibaran from '@/assets/images/nibaran.jpg';
 import gurudevi from '@/assets/images/adormoni_devi.jpg';
 import jatin from '@/assets/images/Jatin.jpg';
+
+
 const Photo = () => {
   const photos = [
     { id: 1, src: gurudev, alt: 'Mahatma Gurunath Sengupta' },
