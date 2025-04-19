@@ -22,7 +22,7 @@ const Contact = () => {
           <form>
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-                Name
+                Name:
               </label>
               <input
                 type="text"
@@ -34,7 +34,7 @@ const Contact = () => {
 
             <div className="mb-4">
               <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                Email
+                Email:
               </label>
               <input
                 type="email"
@@ -46,7 +46,7 @@ const Contact = () => {
 
             <div className="mb-4">
               <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-                Message
+                Message:
               </label>
               <textarea
                 id="message"

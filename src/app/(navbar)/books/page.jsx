@@ -7,25 +7,25 @@ const Books = () => {
   const books = [
     {
       id: 1,
-      title: "উপদেশ-মালা",
+      title: "Orders",
       description: "A guide to finding inner peace and wisdom.",
       image: "/images/book1.jpg",
-      url: "/orders.pdf",
+      // url: "/orders.pdf",
     },
     {
       id: 2,
-      title: "Mindfulness in Daily Life (ধ্যান)",
+      title: "Mindfulness in Daily Life (Meditation)",
       description:
         "Practical tips for incorporating mindfulness into your routine.",
       image: "/images/book2.jpg",
-      url: "/meditation.pdf",
+      // url: "/meditation.pdf",
     },
     {
       id: 3,
-      title: "দম্পতির ধর্ম্মালাপ",
+      title: "Dampotir Dharmma Alap",
       description: "Learn how to cultivate compassion and kindness.",
       image: "/images/book3.jpg",
-      url: "/dampotir-dharmma-alap.pdf",
+      // url: "/dampotir-dharmma-alap.pdf",
     },
   ];
 
@@ -53,7 +53,7 @@ const Books = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-4">
-                <Link href={book.url}>
+                <Link href='#'>
                   <h3 className="text-xl font-bold mb-2">{book.title}</h3>
                 </Link>
                 <p className="text-gray-600 mb-4">{book.description}</p>
@@ -62,9 +62,9 @@ const Books = () => {
           ))}
         </section>
       </main>
-      <Link href="/orders.pdf">DownLoad Pdf</Link>
+      {/* <Link href="/orders.pdf">DownLoad Pdf</Link> */}
 
-      <PdfViewer/>
+      {/* <PdfViewer/> */}
     </div>
   );
 };
